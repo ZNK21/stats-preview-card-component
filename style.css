@@ -1,0 +1,124 @@
+:root {
+    --bg: #0A0C1C;
+    --bg-card: #1B1937;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: white;
+}
+
+.container {
+    width: 90%;
+    margin: 88px auto;
+    background: var(--bg-card);
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32px;
+    border-radius: 8px;
+    max-width: 654px;
+}
+
+.headerImg {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.firstText {
+    font-weight: 700;
+    width: 85%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 28px auto;
+}
+
+.secondText {
+    font-size: 15px;
+    opacity: 0.75;
+    width: 85%;
+    text-align: center;
+    line-height: 25px;
+    margin: 24px auto;
+}
+
+.counter {
+    width: 100%;
+    text-align: center;
+    margin: 24px 0 0;
+}
+
+.counter p {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.counter label {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 930px) {
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: fit-content;
+        padding: 4%;
+    }
+
+    .container {
+        flex-direction: row-reverse;
+        padding-bottom: 0;
+        max-width: none;
+        justify-content: space-between;
+    }
+
+    .headerImg {
+        border-radius: 0 8px 8px 0;
+        width: 50%;
+    }
+
+    .firstText {
+        text-align: left;
+        width: 380px;
+        font-size: 36px;
+        margin: 0px 0 20px;
+    }
+
+    .secondText {
+        text-align: left;
+        width: 374px;
+        margin: 0px 0 20px;
+    }
+
+    .counter {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .counter p {
+        width: fit-content;
+    }
+
+    .counters {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 380px;
+        margin: 0;
+    }
+
+}
